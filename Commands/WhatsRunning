@@ -1,0 +1,13 @@
+{
+    "CommandUUID": "8d0e85f4-0fc4-11ec-82a8-0242ac130003",
+    "CommandName": "CheckLogSizeLimit",
+    "CommandDescription": "Return current running task on a database.",
+    "CommandLocation": "TSQL\\WhatsRunning.sql",
+    "CommandType": "TSQL",
+    "CommandRetryStrategy": {
+        "RetryAttempts": 2,
+        "RetryStrategyType": "LINEAR",
+        "Timeout": 10000,
+        "WaitTime": 1000
+    }
+}

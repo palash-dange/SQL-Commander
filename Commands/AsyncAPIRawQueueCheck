@@ -1,0 +1,28 @@
+{
+    "CommandUUID": "8d0e85f4-0fc4-11ec-82a8-0242ac130003",
+    "CommandName": "AsyncAPIRawQueueCheck",
+    "CommandDescription": "Results in getting the count of AsyncAPI Scale RawQueues needs to be injected.",
+    "CommandLocation": "TSQL\\AsyncAPIRawQueue.sql",
+    "CommandType": "TSQL",
+
+    "CommandParameters": [
+
+    ],
+
+
+
+
+
+
+    "CommandRetryStrategy": {
+        "RetryAttempts": 2,
+        "RetryStrategyType": "LINEAR",
+        "Timeout": 10000,
+        "WaitTime": 1000
+    }
+
+
+
+  
+    
+}

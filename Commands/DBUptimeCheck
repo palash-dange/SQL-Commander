@@ -1,0 +1,13 @@
+{
+    "CommandUUID": "8d0e85f4-0fc4-11ec-82a8-0242ac130003",
+    "CommandName": "DBUptimeCheck",
+    "CommandDescription": "Checks the how long the database is online.",
+    "CommandLocation": "TSQL\\DBUptimeCheck.sql",
+    "CommandType": "TSQL",
+    "CommandRetryStrategy": {
+        "RetryAttempts": 2,
+        "RetryStrategyType": "LINEAR",
+        "Timeout": 10000,
+        "WaitTime": 1000
+    }
+}

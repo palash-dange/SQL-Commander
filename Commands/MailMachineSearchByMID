@@ -1,0 +1,33 @@
+{
+    "CommandUUID": "8d0e85f4-0fc4-11ec-82a8-0242ac130003",
+    "CommandName": "MailMachineSearchByMID",
+    "CommandDescription": "Used to indentify running Jobs with MID on a Mail servers.",
+    "CommandLocation": "TSQL\\MailMachineSearchbyMID.sql",
+    "CommandType": "TSQL",
+
+
+    "ServerDetails": {
+        "DefaultServerName": "",
+        "IsNameEditable": "false",
+        "Source": "StackLevelDBFromSqlInventory"
+    },
+    "CommandParameters":[
+
+        {
+            "Name": "@MachineID",
+            "Type": "string",
+            "Description": "Service Machine ID ",
+            "DefaultValue": "123",
+            "isValueEditable": true
+        }
+    ],
+
+
+    
+    "CommandRetryStrategy": {
+        "RetryAttempts": 2,
+        "RetryStrategyType": "LINEAR",
+        "Timeout": 10000,
+        "WaitTime": 1000
+    }
+}

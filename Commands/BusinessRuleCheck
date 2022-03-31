@@ -1,0 +1,47 @@
+{
+    "CommandUUID": "8d0e85f4-0fc4-11ec-82a8-0242ac130003",
+    "CommandName": "BusinessRuleCheck",
+    "CommandDescription": "Checks the newly created Member database's business rules, aligning with the alerting setup.",
+    "CommandLocation": "TSQL\\BusinessRuleCheck.sql",
+    "CommandType": "TSQL",
+   
+    "ServerDetails": {
+        "DefaultServerName": "SystemDB",
+        "IsNameEditable": "true",
+        "Source": "StackLevelDBFromSqlInventory"
+   
+    },
+    "CommandParameters": [
+
+        {
+            "Name": "@MemberID",
+            "Type": "string",
+            "Description": "Member ID",
+            "DefaultValue": "MID",
+            "isValueEditable": true
+          },
+
+
+          {
+            "Name": "@userID",
+            "Type": "string",
+            "Description": "UserID",
+            "DefaultValue": "synthetictestetXXX",
+            "isValueEditable": true
+          }
+
+
+
+    ],
+
+
+   
+   
+   
+    "CommandRetryStrategy": {
+        "RetryAttempts": 2,
+        "RetryStrategyType": "LINEAR",
+        "Timeout": 10000,
+        "WaitTime": 1000
+    }
+}
