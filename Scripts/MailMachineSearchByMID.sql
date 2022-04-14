@@ -1,4 +1,16 @@
 -- Run this on SXX-SystemDB
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SET QUOTED_IDENTIFIER ON;
+SET NOCOUNT ON;
+SET ANSI_NULLS ON;
 
-SELECT memberid, jobid,dbid from dbo.ommslot with (nolock)
- WHERE servicemachineid in ( XXX)
+BEGIN TRY
+  
+    SELECT memberid, jobid,dbid FROM dbo.ommslot WITH (NOLOCK) 
+    WHERE servicemachineid IN (@memberID);
+
+END TRY
+
+BEGIN CATCH
+    SELECT ERROR_MESSAGE() AS ErrorMessage;
+END CATCH;
